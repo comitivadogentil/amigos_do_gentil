@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+
+html::-webkit-scrollbar{
+    width: .6rem;
+  }
+  
+  html::-webkit-scrollbar-track{
+    background: transparent;
+  }
+  
+  html::-webkit-scrollbar-thumb{
+    background: var(--cor-fundo);
+    border-radius: 2px;
+  }
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/solo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    background-color: rgba( 255, 255, 255, 0.2);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10rem 0 5rem;
+    border: solid 2px #a87d11;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 1);
+}
+
+.title {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 20px;
+    color: var(--color-text-button);
+    margin-top: 30px;
+}
+
+.button {
+    display: inline;
+    margin-top: 10px;
+}
+
+.button a{
+    display: block;
+}
+
+button {
+    font-family: "Cinzel", serif;
+    font-size: 18px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    width: 25rem;
+    height: 3rem;
+    color: #dab968;
+    background-color: #3b3b3b;
+    border: solid 2px #b8860b;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 1);
+}
+
+button i{
+    font-size: 23px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+
+    body{
+    background-image: url(img/solo.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    backface-visibility: hidden;
+    }
+
+    .content{
+        background-color: transparent;
+    }
+
+    img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 4rem 0 10rem;
+    border: solid 1px #000;
+    }
+    .title {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    button {
+    color: #dab968;
+    background-color: #3b3b3b;
+    border: solid 2px #b8860b;
+    font-size: 13px;
+    width: 50px;
+    height: 4rem;
+    }
+
+    button i{
+    font-size: 14px;
+    margin:0 10px;
+}
+
+
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    button {
+        width: 13rem;
+        height: 3rem;
+    }
+}
